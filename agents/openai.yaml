@@ -1,0 +1,13 @@
+interface:
+  display_name: "系统策划"
+  short_description: "沿用个人样式编写系统策划，生成 SVG 配图，默认采用可替换的 Luban 配表规范"
+  default_prompt: "使用 $game-system-design，先读取相关系统文档和配置表，沿用我的文档样式；标题简洁，字段表只列中文字段、英文字段，正文准确引用配置表；Excel 按所选配表工具的规则生成并校验，默认使用 Luban。"
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true

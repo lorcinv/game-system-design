@@ -1,0 +1,24 @@
+{
+  "id": "unreal-datatable",
+  "rules": [
+    "references/table-adapters.md",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/data-driven-gameplay-elements-in-unreal-engine"
+  ],
+  "mapping": {
+    "chinese": "Word dictionary or authoring worksheet",
+    "english": "CSV headers / RowStruct property names",
+    "type": "FTableRowBase-derived RowStruct",
+    "primary_key": "Name by default",
+    "nullable": "Unreal property-specific policy",
+    "groups": "separate outputs / project filter"
+  },
+  "capabilities": {
+    "schema": true,
+    "references": "asset references and project validation",
+    "containers": "RowStruct importer support",
+    "polymorphism": "project-specific",
+    "groups": "project-specific"
+  },
+  "validation": "Import with the project Unreal DataTable importer and inspect row/field errors.",
+  "generation": "Project Excel exporter -> CSV or supported JSON -> Unreal DataTable import/reimport."
+}

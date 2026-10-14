@@ -1,0 +1,16 @@
+{
+  "name": "game-system-design-renderer",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "satori": "0.47.1",
+    "elkjs": "0.12.0",
+    "@resvg/resvg-js": "2.6.2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

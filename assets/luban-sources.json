@@ -1,0 +1,10 @@
+{
+  "checked_date": "2026-10-13",
+  "series": "5.x",
+  "tested_tool_version": "5.1.0",
+  "tested_tool_commit": "df34215d2e22035073d1af83d44e3ac0744dc3b3",
+  "official_document_commit": "06c10bf8ce9f48de41daa8674c0aa1fa780b2637",
+  "documentation": "https://www.datable.cn/docs/intro",
+  "source_repository": "https://github.com/focus-creative-games/luban",
+  "rules": "Locally authored rule summary; section links identify the official reference. No downloaded documentation is bundled."
+}

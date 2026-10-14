@@ -1,0 +1,24 @@
+{
+  "kind": "ui",
+  "width": 960,
+  "title": "背包",
+  "root": {"type": "column", "children": [
+    {"type": "tabs", "items": ["全部", "装备", "材料"], "selected": 0},
+    {"type": "row", "children": [
+      {"type": "panel", "id": "items", "title": "物品列表", "callout": 1, "flex": 3, "children": [
+        {"type": "grid", "columns": 2, "children": [
+          {"type": "button", "text": "铁剑", "selected": true},
+          {"type": "button", "text": "皮甲"},
+          {"type": "button", "text": "木材 ×12"},
+          {"type": "button", "text": "矿石 ×8"}
+        ]},
+        {"type": "text", "text": "容量 4 / 20"}
+      ]},
+      {"type": "panel", "id": "detail", "title": "物品详情", "callout": 2, "flex": 2, "children": [
+        {"type": "text", "text": "铁剑"},
+        {"type": "text", "text": "攻击力 +10"},
+        {"type": "button", "text": "装备", "callout": 3}
+      ]}
+    ]}
+  ]}
+}

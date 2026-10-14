@@ -1,0 +1,147 @@
+{
+  "title": "背包系统设计案",
+  "revision": [
+    [
+      "创建",
+      "空",
+      "2026.10.13",
+      "工具验证样例"
+    ]
+  ],
+  "toc": true,
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "id": "overview",
+      "text": "一、概述"
+    },
+    {
+      "type": "paragraph",
+      "text": "1）玩家查看持有的物品，选择装备并查看属性。"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "id": "main",
+      "text": "二、背包界面"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "读取物品配置，见",
+        {
+          "ref": "fields"
+        },
+        "。"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "entry",
+      "text": "2.1 入口"
+    },
+    {
+      "type": "paragraph",
+      "text": "1）点击主界面的背包按钮，打开背包；关闭后返回原界面。"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "layout",
+      "text": "2.2 整体布局"
+    },
+    {
+      "type": "figure",
+      "file": "ui.png",
+      "caption": "图 1 背包界面"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "编号名称",
+        "说明"
+      ],
+      "widths": [
+        1,
+        3
+      ],
+      "rows": [
+        [
+          "1 物品列表",
+          "显示持有物品的名称和数量。"
+        ],
+        [
+          "2 物品详情",
+          "显示当前选中物品的名称和属性。"
+        ],
+        [
+          "3 装备按钮",
+          {
+            "runs": [
+              "执行装备操作，见",
+              {
+                "ref": "rules"
+              },
+              "。"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "rules",
+      "text": "2.3 装备规则"
+    },
+    {
+      "type": "paragraph",
+      "text": "1）满足装备条件时，替换当前装备，刷新属性和装备标记；不满足时显示具体条件，保留原装备。"
+    },
+    {
+      "type": "pagebreak"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "id": "selection",
+      "text": "2.3.1 选择规则"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "1）选择物品后更新详情区域，区域位置见",
+        {
+          "ref": "layout"
+        },
+        "。"
+      ]
+    },
+    {
+      "type": "figure",
+      "file": "flow.png",
+      "caption": "图 2 装备流程"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "id": "fields",
+      "text": "三、配置表"
+    },
+    {
+      "type": "field_table",
+      "rows": [
+        [
+          "物品编号",
+          "id"
+        ],
+        [
+          "物品名称",
+          "name"
+        ]
+      ]
+    }
+  ]
+}

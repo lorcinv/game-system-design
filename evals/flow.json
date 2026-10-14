@@ -1,0 +1,18 @@
+{
+  "kind": "flow",
+  "title": "装备操作",
+  "direction": "DOWN",
+  "nodes": [
+    {"id": "select", "text": "选择装备"},
+    {"id": "check", "text": "检查装备条件"},
+    {"id": "equip", "text": "替换当前装备"},
+    {"id": "fail", "text": "显示未满足的条件"},
+    {"id": "refresh", "text": "刷新属性和装备标记"}
+  ],
+  "edges": [
+    {"from": "select", "to": "check"},
+    {"from": "check", "to": "equip", "label": "满足"},
+    {"from": "check", "to": "fail", "label": "不满足"},
+    {"from": "equip", "to": "refresh"}
+  ]
+}

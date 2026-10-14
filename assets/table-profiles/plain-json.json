@@ -1,0 +1,23 @@
+{
+  "id": "plain-json",
+  "rules": [
+    "references/table-adapters.md"
+  ],
+  "mapping": {
+    "chinese": "separate field dictionary",
+    "english": "JSON property",
+    "type": "JSON value plus project Schema",
+    "primary_key": "project validator",
+    "nullable": "null distinct from absent and empty string",
+    "groups": "project export filter"
+  },
+  "capabilities": {
+    "schema": "project validator",
+    "references": "project validator",
+    "containers": true,
+    "polymorphism": "explicit discriminator required",
+    "groups": "project export filter"
+  },
+  "validation": "Run the consumer project Schema and business-reference validator.",
+  "generation": "Project exporter writes typed records in the consumer expected array/object/singleton shape."
+}

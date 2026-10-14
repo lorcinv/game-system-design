@@ -1,0 +1,24 @@
+{
+  "id": "luban",
+  "rules": [
+    "references/luban.md",
+    "references/luban-advanced.md"
+  ],
+  "mapping": {
+    "chinese": "##comment",
+    "english": "##var",
+    "type": "##type or explicit Schema",
+    "primary_key": "table.index",
+    "nullable": "T?",
+    "groups": "##group and targets"
+  },
+  "capabilities": {
+    "schema": true,
+    "references": true,
+    "containers": true,
+    "polymorphism": true,
+    "groups": true
+  },
+  "validation": "Use project generator, or dotnet Luban.dll --conf luban.conf -t TARGET -f --strict -x outputSaver=null",
+  "generation": "Use the existing project entrypoint. Choose codeTarget/dataTarget and dedicated generated output directories."
+}

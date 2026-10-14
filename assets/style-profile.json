@@ -1,0 +1,67 @@
+{
+  "pageTwips": {
+    "width": 11906,
+    "height": 16838,
+    "top": 935,
+    "right": 1134,
+    "bottom": 907,
+    "left": 1134,
+    "header": 720,
+    "footer": 397
+  },
+  "fonts": {
+    "chinese": "微软雅黑",
+    "latinBody": "Times New Roman"
+  },
+  "roles": {
+    "A正文标题": {
+      "points": 26,
+      "outlineLevel": null
+    },
+    "A正文-1标题": {
+      "points": 20,
+      "outlineLevel": 0
+    },
+    "A正文-2标题": {
+      "points": 14,
+      "outlineLevel": 1
+    },
+    "A正文-3标题": {
+      "points": 14,
+      "outlineLevel": 2
+    },
+    "A正文": {
+      "points": 12,
+      "outlineLevel": null
+    },
+    "A表格": {
+      "points": 12,
+      "outlineLevel": null
+    },
+    "A图注": {
+      "points": 12,
+      "outlineLevel": null
+    },
+    "A目录": {
+      "points": 12,
+      "outlineLevel": null
+    },
+    "A页码": {
+      "points": 12,
+      "outlineLevel": null
+    }
+  },
+  "table": {
+    "headerFill": "E7E6E6",
+    "border": "B7B7B7",
+    "borderEighthPoints": 5,
+    "points": 12,
+    "repeatHeader": true
+  },
+  "adaptations": [
+    "表格、图注、页码统一 12 磅",
+    "各级标题使用独立样式",
+    "模板仅包含通用占位标题和页面样式"
+  ],
+  "template": "word-template.docx"
+}
